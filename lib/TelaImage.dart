@@ -21,8 +21,12 @@ class _TelaImageState extends State<TelaImage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.network(
-                'https://png.pngtree.com/png-vector/20210222/ourlarge/pngtree-letter-m-3d-logo-design-png-png-image_2933784.jpg'),
+            Container(
+              height: 300,
+              width: 200,
+              child: Image.network(
+                  'https://png.pngtree.com/png-vector/20210222/ourlarge/pngtree-letter-m-3d-logo-design-png-png-image_2933784.jpg'),
+            ),
             SizedBox(height: 10),
             TextField(
               decoration: InputDecoration(
